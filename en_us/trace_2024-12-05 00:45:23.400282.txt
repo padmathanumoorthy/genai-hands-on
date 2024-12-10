@@ -1,0 +1,50 @@
+2024-12-05 00:45:26.695320
+Node: ask_model_to_reason (entry)
+----
+2024-12-05 00:45:31.199845
+Node: ask_model_to_reason (exit)
+content='' additional_kwargs={'usage': {'prompt_tokens': 398, 'completion_tokens': 71, 'total_tokens': 469}, 'stop_reason': 'tool_use', 'model_id': 'anthropic.claude-3-sonnet-20240229-v1:0'} response_metadata={'usage': {'prompt_tokens': 398, 'completion_tokens': 71, 'total_tokens': 469}, 'stop_reason': 'tool_use', 'model_id': 'anthropic.claude-3-sonnet-20240229-v1:0'} id='run-d30539ef-7ecc-4cb1-95b5-8c8bcb541785-0' tool_calls=[{'name': 'get_product_price', 'args': {'query': 'P002'}, 'id': 'toolu_bdrk_01621yRuqukpXJYNQ4Vzmd1V', 'type': 'tool_call'}] usage_metadata={'input_tokens': 398, 'output_tokens': 71, 'total_tokens': 469}
+----
+2024-12-05 00:45:31.203229
+Edge: next_step: Proceed to tools
+content='' additional_kwargs={'usage': {'prompt_tokens': 398, 'completion_tokens': 71, 'total_tokens': 469}, 'stop_reason': 'tool_use', 'model_id': 'anthropic.claude-3-sonnet-20240229-v1:0'} response_metadata={'usage': {'prompt_tokens': 398, 'completion_tokens': 71, 'total_tokens': 469}, 'stop_reason': 'tool_use', 'model_id': 'anthropic.claude-3-sonnet-20240229-v1:0'} id='run-d30539ef-7ecc-4cb1-95b5-8c8bcb541785-0' tool_calls=[{'name': 'get_product_price', 'args': {'query': 'P002'}, 'id': 'toolu_bdrk_01621yRuqukpXJYNQ4Vzmd1V', 'type': 'tool_call'}] usage_metadata={'input_tokens': 398, 'output_tokens': 71, 'total_tokens': 469}
+----
+2024-12-05 00:45:31.215212
+Node: ask_model_to_reason (entry)
+content='Price of product P002 is 60\n' name='get_product_price' id='7dc28df1-05a2-4f79-bb9d-25ab53b3f5a8' tool_call_id='toolu_bdrk_01621yRuqukpXJYNQ4Vzmd1V'
+----
+2024-12-05 00:45:32.425395
+Node: ask_model_to_reason (exit)
+content='' additional_kwargs={'usage': {'prompt_tokens': 476, 'completion_tokens': 57, 'total_tokens': 533}, 'stop_reason': 'tool_use', 'model_id': 'anthropic.claude-3-sonnet-20240229-v1:0'} response_metadata={'usage': {'prompt_tokens': 476, 'completion_tokens': 57, 'total_tokens': 533}, 'stop_reason': 'tool_use', 'model_id': 'anthropic.claude-3-sonnet-20240229-v1:0'} id='run-9bc0f0fc-ce2e-4bd4-b1af-82a2928f6455-0' tool_calls=[{'name': 'get_product_price', 'args': {'query': 'P003'}, 'id': 'toolu_bdrk_01DE9bjHGrw3CcXaBEZVF5QV', 'type': 'tool_call'}] usage_metadata={'input_tokens': 476, 'output_tokens': 57, 'total_tokens': 533}
+----
+2024-12-05 00:45:32.425924
+Edge: next_step: Proceed to tools
+content='' additional_kwargs={'usage': {'prompt_tokens': 476, 'completion_tokens': 57, 'total_tokens': 533}, 'stop_reason': 'tool_use', 'model_id': 'anthropic.claude-3-sonnet-20240229-v1:0'} response_metadata={'usage': {'prompt_tokens': 476, 'completion_tokens': 57, 'total_tokens': 533}, 'stop_reason': 'tool_use', 'model_id': 'anthropic.claude-3-sonnet-20240229-v1:0'} id='run-9bc0f0fc-ce2e-4bd4-b1af-82a2928f6455-0' tool_calls=[{'name': 'get_product_price', 'args': {'query': 'P003'}, 'id': 'toolu_bdrk_01DE9bjHGrw3CcXaBEZVF5QV', 'type': 'tool_call'}] usage_metadata={'input_tokens': 476, 'output_tokens': 57, 'total_tokens': 533}
+----
+2024-12-05 00:45:32.429009
+Node: ask_model_to_reason (entry)
+content='Price of product P002 is 60\n' name='get_product_price' id='7dc28df1-05a2-4f79-bb9d-25ab53b3f5a8' tool_call_id='toolu_bdrk_01621yRuqukpXJYNQ4Vzmd1V'
+content='Price of product P003 is 70\n' name='get_product_price' id='3928dab2-5015-48f2-9f73-9bee0d897ee3' tool_call_id='toolu_bdrk_01DE9bjHGrw3CcXaBEZVF5QV'
+----
+2024-12-05 00:45:35.588266
+Node: ask_model_to_reason (exit)
+content='' additional_kwargs={'usage': {'prompt_tokens': 554, 'completion_tokens': 67, 'total_tokens': 621}, 'stop_reason': 'tool_use', 'model_id': 'anthropic.claude-3-sonnet-20240229-v1:0'} response_metadata={'usage': {'prompt_tokens': 554, 'completion_tokens': 67, 'total_tokens': 621}, 'stop_reason': 'tool_use', 'model_id': 'anthropic.claude-3-sonnet-20240229-v1:0'} id='run-8a51e356-e55e-4a95-9c8f-b45e00bbb9cf-0' tool_calls=[{'name': 'calculator', 'args': {'expression': '60*3 + 70*5'}, 'id': 'toolu_bdrk_01HTrcZNSB296vpcopj8orGK', 'type': 'tool_call'}] usage_metadata={'input_tokens': 554, 'output_tokens': 67, 'total_tokens': 621}
+----
+2024-12-05 00:45:35.588881
+Edge: next_step: Proceed to tools
+content='' additional_kwargs={'usage': {'prompt_tokens': 554, 'completion_tokens': 67, 'total_tokens': 621}, 'stop_reason': 'tool_use', 'model_id': 'anthropic.claude-3-sonnet-20240229-v1:0'} response_metadata={'usage': {'prompt_tokens': 554, 'completion_tokens': 67, 'total_tokens': 621}, 'stop_reason': 'tool_use', 'model_id': 'anthropic.claude-3-sonnet-20240229-v1:0'} id='run-8a51e356-e55e-4a95-9c8f-b45e00bbb9cf-0' tool_calls=[{'name': 'calculator', 'args': {'expression': '60*3 + 70*5'}, 'id': 'toolu_bdrk_01HTrcZNSB296vpcopj8orGK', 'type': 'tool_call'}] usage_metadata={'input_tokens': 554, 'output_tokens': 67, 'total_tokens': 621}
+----
+2024-12-05 00:45:35.592524
+Node: ask_model_to_reason (entry)
+content='Price of product P002 is 60\n' name='get_product_price' id='7dc28df1-05a2-4f79-bb9d-25ab53b3f5a8' tool_call_id='toolu_bdrk_01621yRuqukpXJYNQ4Vzmd1V'
+content='Price of product P003 is 70\n' name='get_product_price' id='3928dab2-5015-48f2-9f73-9bee0d897ee3' tool_call_id='toolu_bdrk_01DE9bjHGrw3CcXaBEZVF5QV'
+content='530' name='calculator' id='032e7ec4-abba-4a3c-9156-f0c933af39fc' tool_call_id='toolu_bdrk_01HTrcZNSB296vpcopj8orGK'
+----
+2024-12-05 00:45:38.929370
+Node: ask_model_to_reason (exit)
+content='To calculate the total cost:\n3 units of P002 at $60 each = $60 * 3 = $180\n5 units of P003 at $70 each = $70 * 5 = $350\nTotal cost = $180 + $350 = $530\n\nTherefore, the cost to buy 3 units of P002 and 5 units of P003 is $530.' additional_kwargs={'usage': {'prompt_tokens': 626, 'completion_tokens': 100, 'total_tokens': 726}, 'stop_reason': 'end_turn', 'model_id': 'anthropic.claude-3-sonnet-20240229-v1:0'} response_metadata={'usage': {'prompt_tokens': 626, 'completion_tokens': 100, 'total_tokens': 726}, 'stop_reason': 'end_turn', 'model_id': 'anthropic.claude-3-sonnet-20240229-v1:0'} id='run-989a0f7b-2fed-4d1b-9189-5efe40a3cd9f-0' usage_metadata={'input_tokens': 626, 'output_tokens': 100, 'total_tokens': 726}
+----
+2024-12-05 00:45:38.930415
+Edge: next_step: Proceed to end
+content='To calculate the total cost:\n3 units of P002 at $60 each = $60 * 3 = $180\n5 units of P003 at $70 each = $70 * 5 = $350\nTotal cost = $180 + $350 = $530\n\nTherefore, the cost to buy 3 units of P002 and 5 units of P003 is $530.' additional_kwargs={'usage': {'prompt_tokens': 626, 'completion_tokens': 100, 'total_tokens': 726}, 'stop_reason': 'end_turn', 'model_id': 'anthropic.claude-3-sonnet-20240229-v1:0'} response_metadata={'usage': {'prompt_tokens': 626, 'completion_tokens': 100, 'total_tokens': 726}, 'stop_reason': 'end_turn', 'model_id': 'anthropic.claude-3-sonnet-20240229-v1:0'} id='run-989a0f7b-2fed-4d1b-9189-5efe40a3cd9f-0' usage_metadata={'input_tokens': 626, 'output_tokens': 100, 'total_tokens': 726}
+----
